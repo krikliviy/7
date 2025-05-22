@@ -1,0 +1,154 @@
+@startuml
+
+abstract class Figure {
+    + {abstract} dimension(): int
+    + {abstract} perimeter(): float
+    + {abstract} square(): float
+    + {abstract} squareSurface(): float
+    + {abstract} squareBase(): float
+    + {abstract} height(): float
+    + {abstract} volume(): float
+}
+
+class Triangle {
+    - a: float
+    - b: float
+    - c: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class Rectangle {
+    - a: float
+    - b: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class Trapeze {
+    - a: float
+    - b: float
+    - c: float
+    - d: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class Parallelogram {
+    - a: float
+    - b: float
+    - h: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class Circle {
+    - r: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class Ball {
+    - r: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class TriangularPyramid {
+    - h: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class QuadrangularPyramid {
+    - h: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class RectangularParallelepiped {
+    - c: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class Cone {
+    - h: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+class TriangularPrism {
+    - h: float
+    + dimension(): int
+    + perimeter(): float
+    + square(): float
+    + squareSurface(): float
+    + squareBase(): float
+    + height(): float
+    + volume(): float
+}
+
+Figure <|-- Triangle
+Figure <|-- Rectangle
+Figure <|-- Trapeze
+Figure <|-- Parallelogram
+Figure <|-- Circle
+Figure <|-- Ball
+Triangle <|-- TriangularPyramid
+Triangle <|-- TriangularPrism
+Rectangle <|-- QuadrangularPyramid
+Rectangle <|-- RectangularParallelepiped
+Circle <|-- Cone
+
+@enduml 
